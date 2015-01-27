@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jose.collegepreptools.standard_test"
+    android:background="@android:color/holo_blue_light">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/standard"
+        android:entries="@array/testarray"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/location"
+        android:id="@+id/location"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insertlocation"
+        android:layout_alignBottom="@+id/location"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_toRightOf="@+id/location"
+        android:layout_toEndOf="@+id/location"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/showdate"
+        android:id="@+id/showdate"
+        android:layout_below="@+id/standard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editdates"
+        android:layout_alignBottom="@+id/showdate"
+        android:layout_toRightOf="@+id/location"
+        android:layout_toStartOf="@+id/insertlocation"
+        android:layout_alignRight="@+id/insertlocation"
+        android:layout_alignEnd="@+id/insertlocation"
+        android:inputType="date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/criticalreading"
+        android:id="@+id/critcalreading"
+        android:layout_below="@+id/showdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editcreading"
+        android:layout_alignBottom="@+id/critcalreading"
+        android:layout_toRightOf="@+id/critcalreading"
+        android:layout_alignRight="@+id/editdates"
+        android:layout_alignEnd="@+id/editdates"
+        android:hint="@string/editcreading"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/math1"
+        android:id="@+id/math"
+        android:layout_below="@+id/critcalreading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editmath"
+        android:layout_alignBottom="@+id/math"
+        android:layout_alignLeft="@+id/editdates"
+        android:layout_alignStart="@+id/editdates"
+        android:layout_alignRight="@+id/editcreading"
+        android:layout_alignEnd="@+id/editcreading"
+        android:inputType="number"
+        android:hint="@string/editmath" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/writing"
+        android:id="@+id/writing"
+        android:layout_below="@+id/math"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editwriting"
+        android:layout_alignBottom="@+id/writing"
+        android:layout_alignRight="@+id/editcreading"
+        android:layout_alignEnd="@+id/editcreading"
+        android:layout_alignLeft="@+id/editmath"
+        android:layout_alignStart="@+id/editmath"
+        android:inputType="number"
+        android:hint="@string/editwriting" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/science"
+        android:id="@+id/science"
+        android:layout_below="@+id/writing"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editscience"
+        android:layout_alignBottom="@+id/science"
+        android:layout_alignRight="@+id/editcreading"
+        android:layout_alignEnd="@+id/editcreading"
+        android:layout_alignLeft="@+id/editwriting"
+        android:layout_alignStart="@+id/editwriting"
+        android:hint="@string/editscience"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/reading1"
+        android:id="@+id/reading1"
+        android:layout_below="@+id/science"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editreading1"
+        android:layout_alignBottom="@+id/reading1"
+        android:layout_alignRight="@+id/editcreading"
+        android:layout_alignEnd="@+id/editcreading"
+        android:layout_toEndOf="@+id/critcalreading"
+        android:layout_alignLeft="@+id/editscience"
+        android:layout_alignStart="@+id/editscience"
+        android:inputType="number"
+        android:hint="@string/reading3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savescores"
+        android:id="@+id/savetestscores"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="writetest" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goback4"
+        android:src="@drawable/ic_goback"
+        android:contentDescription="@string/goback4"
+        android:layout_alignTop="@+id/savetestscores"
+        android:layout_alignRight="@+id/editreading1"
+        android:layout_alignEnd="@+id/editreading1" />
+
+</RelativeLayout>

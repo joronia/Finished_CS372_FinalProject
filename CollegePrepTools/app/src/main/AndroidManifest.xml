@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jose.collegepreptools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/firstappicon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".Community_Service_extracurricular_activities"
+            android:label="@string/title_activity_community__service_extracurricular_activities" >
+        </activity>
+        <activity
+            android:name=".Viewevents"
+            android:label="@string/title_activity_viewevents" >
+        </activity>
+        <activity
+            android:name=".standard_test"
+            android:label="@string/title_activity_standard_test" >
+        </activity>
+        <activity
+            android:name=".seetest"
+            android:label="@string/title_activity_seetest" >
+        </activity>
+        <activity
+            android:name=".collegeinfo"
+            android:label="@string/title_activity_collegeinfo" >
+        </activity>
+        <activity
+            android:name=".mainmenu"
+            android:label="@string/title_activity_mainmenu" >
+             <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

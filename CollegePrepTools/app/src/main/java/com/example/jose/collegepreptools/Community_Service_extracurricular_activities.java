@@ -25,6 +25,7 @@ import java.io.OutputStreamWriter;
 public class Community_Service_extracurricular_activities extends ActionBarActivity {
 
     // Intitialize variable to zero.
+    //PT -- these variables could have better names
     EditText event1 = null; //(EditText) findViewById(R.id.community);
     EditText hours1 = null;//(EditText) findViewById(R.id.dates);
     EditText hours2 = null;
@@ -108,6 +109,7 @@ public class Community_Service_extracurricular_activities extends ActionBarActiv
             long l = f.length();
             String n = f.getName();
 
+//PT -- why is this code formatted so strangely?
             Toast
 
                     .makeText(this, "The contents are saved in the file.", Toast.LENGTH_LONG)
